@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Gateway</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">AGE PAGE</h1>
+    <p class="subtitle">Please enter your name and birthdate.</p>
+    <form id="ageForm">
+      
+      <!-- Name input: -->
+      <div class="input-group">
+        <label class="group-label">Name</label>
+        <div class="name-group">
+          <div class="input-group">
+            <label class="sub-label" for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+
+          <div class="input-group">
+            <label class="sub-label" for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+      </div>
+
+      <!-- Date input:-->
+      <div class="input-group">
+        <label class="group-label" for="birthdate">Birthdate</label>
+        <input type="date" id="birthdate" name="birthdate" required />
+      </div>
+
+      <!-- Button: -->
+      <button type="submit">SUBMIT</button>
+    </form>
+    <!-- Content: -->
+    <div class="content" id="content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
